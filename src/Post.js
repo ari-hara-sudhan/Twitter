@@ -7,7 +7,7 @@ import CommentIcon from '@material-ui/icons/Comment';
 import { IconButton } from '@material-ui/core';
 import ShareIcon from '@material-ui/icons/Share';
 function Post({profile,message,timestamp,image}) {
-    var timestamp2 = new Date(timestamp.toDate()).toUTCString()
+    var timestamp2 = new Date(timestamp?.toDate()).toUTCString()
     return (
         
         <div className="post">

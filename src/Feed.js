@@ -21,7 +21,7 @@ function Feed() {
         setUrl("");
     }
     useEffect(()=>{
-        db.collection("tweets").onSnapshot(snapshot=>{
+        db.collection("tweets").orderBy("timestamp","desc").onSnapshot(snapshot=>{
             setPosts(snapshot.docs.map(doc=>doc.data()))
         })
     },[])
@@ -49,7 +49,7 @@ function Feed() {
             </div>
             
           
-            <Button onClick={upload} type='submit' className="feed__button">Tweet</Button>
+            <Button disabled={!url} onClick={upload} type='submit' className="feed__button">Tweet</Button>
 
             </form>
      
