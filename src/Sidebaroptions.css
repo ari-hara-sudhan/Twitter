@@ -1,0 +1,17 @@
+.sidebaroptions{
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+}
+.sidebaroptions:hover{
+    color:blue;
+    background-color:lightblue;
+    transition: color 100ms ease-out;
+    border-radius:20px;
+}
+.sidebaroptions>.MuiSvgIcon-root{
+    margin:20px;
+}
+.sidebaroption__active{
+    color:rgba(0, 119, 255, 0.719);
+}

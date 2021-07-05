@@ -1,0 +1,18 @@
+.sidebar{
+    flex:0.3;
+    border-right:1px solid lightgray;
+    padding:20px;
+}
+.sidebar__logo{
+    color:rgba(0, 119, 255, 0.719) ;
+    
+}
+.sidebar__button{
+    border:none;
+    background-color: rgba(0, 119, 255, 0.719) !important;
+    margin:10px !important;
+    padding:10px !important;
+    border-radius:20px !important;
+    color:white !important;
+
+}
