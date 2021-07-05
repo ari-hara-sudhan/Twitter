@@ -18,9 +18,7 @@
 }
 .post__image{
     padding:10px;
-    height:378px;
-    width:320px;
-    max-width:400px;
+    width:25vw;
     object-fit: contain;
     overflow-y: hidden;
 }

@@ -7,13 +7,15 @@ import CommentIcon from '@material-ui/icons/Comment';
 import { IconButton } from '@material-ui/core';
 import ShareIcon from '@material-ui/icons/Share';
 function Post({profile,message,timestamp,image}) {
+    var timestamp2 = new Date(timestamp.toDate()).toUTCString()
     return (
+        
         <div className="post">
             <div className='post__top'>
                 <Avatar src={profile}/>
                 <div className="post__info">
                 <h5>{message}</h5>
-                <h6>{timestamp}</h6>
+                <h6>{timestamp2}</h6>
 
                 </div>
                 
